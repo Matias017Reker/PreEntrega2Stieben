@@ -120,8 +120,11 @@ const arrayDeProductos = [
 
 const enOferta = productos.filter(productos => productos.oferta);
 
+const rtx = productos.find(producto => producto.nombre.toLowerCase().includes("rtx"));
+
 console.log(productos);
-console.log(enOferta)
+console.log(enOferta);
+console.log(rtx)
 
 function calcularcuotas(){
     let monto = parseInt(prompt("Ingrese el monto que se ajuste a su presupuesto."))
